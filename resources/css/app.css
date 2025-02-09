@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.form-signin img{
+    display: block;
+    margin: 0 auto 1rem;
+}
+.form-signin h1{
+    text-align: center;
+}

@@ -15,8 +15,8 @@
     <form class="row g-3">
         @csrf
         <div class="col-md-12">
-          <label for="name" class="form-label">Nome</label>
-          <input type="text" name="name" class="form-control" id="name">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" name="name" class="form-control" id="name">
         </div>
 
         <div class="col-md-6">

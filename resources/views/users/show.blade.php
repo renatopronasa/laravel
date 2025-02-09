@@ -4,7 +4,7 @@
 
 <div class="card mt-4 mb-4 border-light shadow">
     <div class="card-header hstack gap-2">
-        <span>Visualizar Usúarios</span>
+        <span class="fw-bold">Visualizar Usúarios</span>
         <span class="ms-auto">
             <a href="{{ route('user.index',['user'=> 1])}}" class="btn btn-success btn-sm">Listar</a>
         </span>   
