@@ -31,7 +31,7 @@
                             <td>{{ $user->email }}</td>
                             <td>
                                 <a href="{{ route('user.show', ['user' => $user->id]) }}"
-                                    class="btn btn-primary btn-sm">Visualiar</a>
+                                    class="btn btn-primary btn-sm">Visualizar</a>
 
                                 <a href="{{ route('user.edit', ['user' => $user->id]) }}"
                                     class="btn btn-warning btn-sm">Editar</a>
