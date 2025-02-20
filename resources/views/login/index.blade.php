@@ -15,7 +15,7 @@
 <body class="d-flex align-items-center justify-content-center vh-100">
 
     <div class="card p-4 shadow" style="width: 24rem">
-        <main class="form-signin">
+        <main class="form-signin text-center">
 
             <img class="mb-4" src="{{ asset('images/logo-define-100x100_v1.png') }}" alt="" width="72"
                 height="72">
@@ -28,22 +28,28 @@
                 @method('POST')
 
                 <div class="form-floating mb-3">
+                    <div class="input-group">
                     <input type="email" name="email" class="form-control" id="email"
-                        placeholder="Digite o e-mail de usuário" value="{{ old('email') }}">
-                    <label for="email">E-mail</label>
+                        placeholder="E-mail" value="{{ old('email') }}">
+                    
+                    </div>
                 </div>
 
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-3 ">
+                    <div class="input-group">
                     <input type="password" name="password" class="form-control" id="password"
-                        placeholder="Digite a senha" value="{{ old('password') }}">
-                    <label for="password">Senha</label>
+                        placeholder="Senha" value="{{ old('password') }}">
+                        
+                        
+                        <span class="input-group-text" role="button" onclick="togglePassword('password', this)"><i class="bi bi-eye"></i></span>
+                    </div>
                 </div>
 
                 <button class="btn btn-primary w-100 py-2" type="submit">Acessar</button>
 
                 <p class="mt-3 mb-3 text-body-secondary text-center">Esqueceu a Senha?</p>
 
-                <p class="mt-3 mb-3 text-body-secondary text-center">Novo na Nlarax? <a href="#"
+                <p class="mt-3 mb-3 text-body-secondary text-center">Novo na NatOS? <a href="#"
                         class="text-decoration-none">Cadastre</a> para começar!</p>
 
             </form>
