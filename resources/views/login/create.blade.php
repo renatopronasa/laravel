@@ -1,10 +1,10 @@
-@extends('layouts.admin')
+@extends('layouts.auth')
 
 @section('content')
     <div class="card mt-4 mb-4 border-light shadow">
 
         <div class="card-header hstack gap-2">
-            <span>Cadastrar Usuário</span>
+            <span>Novo Usuário</span>
             <span class="ms-auto">
                 <a href="{{ route('user.index') }}" class="btn btn-info btn-sm">Listar</a>
             </span>
@@ -14,7 +14,7 @@
 
             <x-alert />
 
-            <form action="{{ route('user.store') }}" method="POST" class="row g-3">
+            <form action="{{ route('login.store-user') }}" method="POST" class="row g-3">
                 @csrf
                 @method('POST')
 
@@ -46,8 +46,6 @@
                     
                 <div class="col-12">
                     <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
-                    <a href="{{ route('login') }}" class="text-decoration-none">Login</a>
-
                 </div>
 
             </form>

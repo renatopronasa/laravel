@@ -49,7 +49,7 @@
 
                 <p class="mt-3 mb-3 text-body-secondary text-center">Esqueceu a Senha?</p>
 
-                <p class="mt-3 mb-3 text-body-secondary text-center">Novo na NatOS? <a href="#"
+                <p class="mt-3 mb-3 text-body-secondary text-center">Novo na NatOS? <a href="{{ route('login.create-user') }}"
                         class="text-decoration-none">Cadastre</a> para começar!</p>
 
             </form>
